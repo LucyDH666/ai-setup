@@ -64,12 +64,12 @@ echo "📡 Telegram-notificatie instellen..."
 cat <<EOT > telegram_notify.py
 import requests
 
-TELEGRAM_BOT_TOKEN = "YOUR_BOT_TOKEN"
-TELEGRAM_CHAT_ID = "YOUR_CHAT_ID"
+TELEGRAM_BOT_TOKEN = "7815675562:AAGkaleoBRaq2gd4xtTfeJFyh_-Emq9dYgA"
+TELEGRAM_CHAT_ID = "7150147183"
 
 def send_telegram_message(message):
-    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
-    payload = {"chat_id": TELEGRAM_CHAT_ID, "text": message}
+    url = f"https://api.telegram.org/bot{7815675562:AAGkaleoBRaq2gd4xtTfeJFyh_-Emq9dYgA}/sendMessage"
+    payload = {"chat_id": 7150147183, "text": message}
     requests.post(url, data=payload)
 
 send_telegram_message("🚀 YOLO training is gestart!")
